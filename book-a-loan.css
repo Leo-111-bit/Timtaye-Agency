@@ -1,0 +1,58 @@
+body {
+    background-image: url("./image\ 4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+ }
+
+.book-a-loan-box {
+    backdrop-filter: blur(20px);
+    display: block;
+    padding: 40px;
+    margin-left: 500px;
+    width: 340px;
+    border-bottom: 20px;
+    border-radius: 1rem;
+    animation: colorAnimation 7s infinite; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+}
+
+.book-a-loan-box label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.book-a-loan-box input {
+    width: 330px;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+
+.book-a-loan-box h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.book-a-loan-box h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.terms{
+    margin-top: 0.2rem;
+}
+.terms input{
+    height: 1em;
+    width:1em;
+    cursor: pointer;
+}
+.terms label{
+    font-size: 1rem;
+
+}
+
+button {
+    width: 130px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 100%;
+}

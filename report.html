@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report</title>
+  <link rel="stylesheet" href="report.css">
+</head>
+<body>
+  <header>
+    <h1>Report an Issue - TIMTAYE LOAN AGENCY</h1>
+  </header>
+  
+  <section class="content">
+    <form id="issueForm" method="POST" action="report.php" enctype="multipart/form-data">
+      <label for="issueDescription">Issue Description:</label>
+      <textarea id="issueDescription" name="issueDescription" rows="4" required></textarea>
+      
+      <label for="screenshot">Screenshot (if applicable):</label>
+      <input type="file" id="screenshot" name="screenshot">
+      
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+  <section class="menu-section">
+    <div class="container">
+        <h2>Menu</h2>
+        <ul class="menu-list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about us.html"  class="nav-link" >About Us</a></li>
+            <li><a href="contact us.html">Contact Us</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="./report.html"  class="nav-link" >Report a Problem</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+            <li><a href="./privacy policy.html"  class="nav-link" >Privacy Policy</a></li>
+        </ul>
+    </div>
+</section>
+  
+  <script src="report.js"></script>
+
+</body>
+</html>

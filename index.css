@@ -1,0 +1,227 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Use a user-friendly font */
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.container h2 {
+    margin-left: -400px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    background-image: url('./view-3d-handshake.jpg'); /* Replace 'your-image.jpg' with the path to your background image */
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #eee;
+}
+
+.features {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2rem;
+    background-image: url('./image\ 2.jpg');
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: cursive;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.feature {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
+}
+
+.company-info, .achievements-info {
+    font-family: 'Roboto', Arial, sans-serif; /* Use a user-friendly font */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+    flex: 0 0 45%; /* Adjust width to occupy half of the section */
+    animation: fadeIn 2s ease; /* Add animation */
+    text
+}
+.additional-features {
+    margin-bottom: 10px;
+    border-radius: 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./image\ 3.jpg');
+    background-color: #f2f2f2;
+    padding: 50px 0;
+}
+
+.additional-features h2 {
+    text-align: center;
+}
+
+.loan-offer {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 1000px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.loan-info {
+    padding: 30px;
+}
+
+.loan-info h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.loan-info p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.menu-section {
+    background-color: #f9f9f9;
+    padding: 20px 0;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+.menu-list li {
+    margin-bottom: 10px;
+}
+
+.menu-list a {
+    font-family: cursive;
+    display: block;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-list a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Add this CSS at the end of your existing CSS file */
+
+/* Add this CSS at the end of your existing CSS file */
+
+
+.loader-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1000; /* Ensure it appears above other content */
+  }
+  
+  .loader {
+    height: 4px;
+    width: 130px;
+    --c:no-repeat linear-gradient(#6100ee 0 0);
+    background: var(--c),var(--c),#d7b8fc;
+    background-size: 60% 100%;
+    animation: l16 3s infinite;
+  }
+  
+  @keyframes l16 {
+    0%   {background-position:-150% 0,-150% 0}
+    66%  {background-position: 250% 0,-150% 0}
+    100% {background-position: 250% 0, 250% 0}
+  }
+  
+

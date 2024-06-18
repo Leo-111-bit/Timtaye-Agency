@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Newsletter Signup Form</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Newsletter Signup Form</h2>
+        <form action="/submit-newsletter" method="POST" id="newsletterForm">
+            <div class="form-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number (Optional):</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="loan-type">Preferred Loan Type:</label>
+                <select id="loan-type" name="loan-type" required>
+                    <option value="personal">Personal Loan</option>
+                    <option value="home">Home Loan</option>
+                    <option value="auto">Auto Loan</option>
+                    <option value="student">Student Loan</option>
+                    <option value="business">Business Loan</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="referral">How Did You Hear About Us?</label>
+                <select id="referral" name="referral" required>
+                    <option value="social-media">Social Media</option>
+                    <option value="friend-family">Friend/Family</option>
+                    <option value="online-search">Online Search</option>
+                    <option value="advertisement">Advertisement</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="consent-email" name="consent-email" required>
+                <label for="consent-email" class="checkbox-label">I agree to receive newsletters and promotional offers via email.</label>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="consent-terms" name="consent-terms" required>
+                <label for="consent-terms" class="checkbox-label">I agree to the Privacy Policy and Terms of Service.</label>
+            </div>
+            <button type="submit" class="submit-btn" id="submitBtn">
+                Submit
+                <div id="spinner" class="spinner" style="display: none;"></div>
+
+        </form>
+    </div>
+
+    <div id="verificationPopup" class="popup">
+        <p>Congratulations! You've successfully subscribed to Timtaye Loan Agency's newsletter. Get ready to receive exclusive loan offers, financial insights, and expert tips straight to your inbox. Stay tuned for updates on your financial journey. Thank you for choosing Timtaye Loan Agency!</p>
+        <button onclick="closePopup()" class="close-btn">Close</button>
+    </div>
+
+    <script src="script.js"></script> <!-- Include your JavaScript file -->
+
+        </form>
+    </div>
+</body>
+</html>
